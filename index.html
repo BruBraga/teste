@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Starbucks Coffee</title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        </head>
+    <body>
+        <header>
+            <div class="center">
+               <div class="logo"><img src="assets/logo.png" /></div><!--logo-->
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">What's New</a>
+                </div><!--menu-->
+            </div><!--center-->
+        </header>
+        <section class="sobre">
+            <div class="extras">
+                <img src="Assets/img1.png" width="280px" class="StarbucksCup"/>
+            </div>
+            <div class="Sci">
+                <li><a href="#"><img src="Assets/facebook.png" width="20px"></a></li>
+                <li><a href="#"><img src="Assets/insta.png" width="30px"></a></li>
+                <li><a href="#"><img src="Assets/twitter.png" width="30px"></a></li>
+            </div>
+
+                    
+            <div class="center">
+                <div class="texto-sobre">
+                    <h1>It's not just Coffee<br/>It's <span style="color:#017143">StarBucks</span> </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lectus imperdiet, egestas magna in, rutrum lorem. Maecenas porttitor libero quis leo convallis lobortis. Nullam consectetur libero eget lectus tristique, non imperdiet tortor ullamcorper. Nam felis nisi, malesuada sed nibh a, sodales congue dolor. Fusce consequat tincidunt massa vehicula molestie. Suspendisse non ultrices est. Vestibulum consequat dictum est vel sagittis. Ut ultricies nec lacus vel viverra. Fusce ac fringilla dolor, a sodales turpis.</p>
+                    <button>Learn More</button>
+                </div>
+                </div>
+                <ul class="thumb">
+                    <li><img src="Assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+                    <li><img src="Assets/thumb2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')" ></li>
+                    <li><img src="Assets/thumb3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
+                </ul>  
+                
+                </ul>            
+        </section>
+
+       <script type= "text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.StarbucksCup').src = anything;
+        }
+        function changeCircleColor(color){
+            const extras = document.querySelector('.extras');
+            extras.style.background = color;
+        }
+       </script>
+    </body>
+</html>
